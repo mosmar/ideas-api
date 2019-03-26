@@ -21,8 +21,12 @@
   "dependencies": {
     "@nestjs/common": "^5.1.0",
     "@nestjs/core": "^5.1.0",
+    "@nestjs/typeorm": "^6.0.0",
+    "dotenv": "^7.0.0",
+    "pg": "^7.9.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
+    "typeorm": "^0.2.15",
     "typescript": "^3.0.1"
   },
   "devDependencies": {
