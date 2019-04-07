@@ -3,14 +3,12 @@ import { Controller, Get, Post, Put, Delete, Body, Param, UsePipes, Logger } fro
 import { IdeaDTO } from './idea.dto';
 import { ValidationPipe } from '../shared/validation.pipe';
 
-@Controller('idea')
+@Controller('api/ideas')
 export class IdeaController {
 
     private logger = new Logger('IdeaController');
-    
-    constructor(private ideaService: IdeaService) {
 
-    }
+    constructor(private ideaService: IdeaService) { }
 
     @Get()
     showAllIdeas() {
