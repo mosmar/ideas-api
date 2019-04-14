@@ -58,7 +58,6 @@ export class IdeaService {
     }
 
     private toResponseObject(idea: IdeaEntity): IdeaRO {
-        // return { ...idea, author: idea.author.toResponseObject(false) };
         const responseObject: any = { ...idea, author: idea.author.toResponseObject(false) };
         if (responseObject.upvotes) {
             responseObject.upvotes = idea.upvotes.length;
